@@ -3,7 +3,22 @@
  * Author: Syful Islam Alif – 2025-06-26
  *
  * Requires: tabulator.min.js and tabulator.min.css in the same folder.
+ * 
  */
+
+looker.plugins.visualizations.getAssetUrl('tabulator.min.css')
+looker.plugins.visualizations.loadJs(
+  looker.plugins.visualizations.getAssetUrl('tabulator.min.js')
+)
+
+if (looker?.themes?.currentTheme === 'dark') {
+  var darkLink = document.createElement('link');
+  darkLink.rel  = 'stylesheet';
+  darkLink.type = 'text/css';
+  darkLink.href = looker.plugins.visualizations.getAssetUrl('tabulator_midnight.min.css');
+  document.head.appendChild(darkLink);
+}
+
 
 looker.plugins.visualizations.add({
 
