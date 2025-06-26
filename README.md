@@ -6,6 +6,7 @@
 - `main.js` – visualization code (ES5, compatible with Looker sandbox).
 - `tabulator.min.js`, `tabulator.min.css`, `tabulator_midnight.min.css` – **not included** in this zip to keep it light.  
   Download the matching Tabulator build (e.g. v6.3.0) and drop the files here.
+  
 
 **Quick setup**
 
